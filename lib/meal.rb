@@ -1,4 +1,5 @@
 class Meal
+<<<<<<< HEAD
     attr_reader :waiter, :customer, :total, :tip
     @@all = [ ]
     def initialize(waiter, customer, total, tip)
@@ -13,3 +14,19 @@ class Meal
       @@all
     end 
 end
+=======
+ attr_reader :waiter, :customer, :total, :tip
+ @@all = [ ]
+ def initialize(waiter, customer, total, tip)
+   @waiter = waiter
+   @customer = customer
+   @total = total
+   @tip = tip
+   @@all << self
+ end
+
+ def self.all
+   @@all
+ end 
+end
+>>>>>>> cbd261811a3d3aac5796501b9c748d421d4060e1
